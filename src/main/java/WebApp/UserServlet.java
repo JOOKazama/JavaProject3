@@ -25,6 +25,6 @@ public class UserServlet extends HttpServlet
         }
     }
 
-    @Override protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException
-    { doPost(req, resp); }
+    @Override protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException
+    { doPost(request, response); }
 }
