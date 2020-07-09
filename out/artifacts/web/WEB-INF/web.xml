@@ -96,22 +96,22 @@
 
     <error-page>
         <exception-type>java.io.IOException</exception-type>
-        <location>/WebApp.Error</location>
+        <location>/Error</location>
     </error-page>
 
     <error-page>
         <error-code>404</error-code>
-        <location>/WebApp.Error</location>
+        <location>/Error</location>
     </error-page>
 
     <error-page>
         <error-code>403</error-code>
-        <location>/WebApp.Error</location>
+        <location>/Error</location>
     </error-page>
 
     <error-page>
         <error-code>500</error-code>
-        <location>/WebApp.Error</location>
+        <location>/Error</location>
     </error-page>
 
     <filter>

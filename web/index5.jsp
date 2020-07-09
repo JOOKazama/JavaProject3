@@ -1,6 +1,6 @@
 <%@ page import="Tables.User" %>
 <%@ page import="Tables.UserCRUD" %>
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
 
 <html>
 <head> <title>Information</title> </head>
@@ -121,7 +121,7 @@
 
 <form action="CheckUser" method="POST">
 
-    <% User user=UserCRUD.getUser((String)request.getSession().getAttribute("str")); %>
+    <% User user=UserCRUD.getUser((String)request.getSession().getAttribute("clicked_username")); %>
 
     <div class="l1"> <input type="submit" class="l13" value="Назад" name="back" id="back"> </div>
 

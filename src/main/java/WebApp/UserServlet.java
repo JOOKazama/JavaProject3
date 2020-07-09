@@ -3,7 +3,6 @@ import Tables.User;
 import Tables.UserCRUD;
 import javax.servlet.http.*;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 public class UserServlet extends HttpServlet
 {
@@ -12,11 +11,10 @@ public class UserServlet extends HttpServlet
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException
     {
-        PrintWriter print_writer=response.getWriter();
         String username=(String)request.getSession().getAttribute("username");
         current_user=UserCRUD.getUser(username);
 
-        if(current_user.getUsername()==null) { print_writer.println("No such user!"); }
+        if(current_user.getUsername()==null) { response.getWriter().println("No such user!"); }
         else
         {
             response.setContentType("text/html; charset=UTF-8");

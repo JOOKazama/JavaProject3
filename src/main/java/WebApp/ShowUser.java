@@ -12,7 +12,6 @@ public class ShowUser extends HttpServlet
     {
         if(request.getParameter("reg")!=null) { response.sendRedirect("Main"); }
         else if(request.getParameter("list")!=null) { response.sendRedirect("ListServlet"); }
-        else if(request.getParameter("enter")!=null) { response.sendRedirect("Login"); }
         else if(request.getParameter("exit")!=null)
         {
             response.sendRedirect("Login");

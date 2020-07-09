@@ -1,5 +1,5 @@
 ﻿<%@ page import="Tables.User" %>
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <html>
 <head> <title>Information</title> </head>
 
@@ -151,7 +151,6 @@
     <% User user=(User)request.getSession().getAttribute("user"); %>
 
 <div class="l1">
-    <input type="submit" class="l13" value="Вход" name="enter">
     <input type="submit" class="l13" value="Регистрация" name="reg">
     <input type="submit" class="l13" value="Потребители" name="list">
     <input type="submit" class="l13" value="Изход" name="exit">

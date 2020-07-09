@@ -8,7 +8,6 @@ public class Validators
 
     public void ValidatorCreate(String name, String username, String password, String password1)
     {
-
             User user=UserCRUD.getUser(name);
             if(user.getUsername()!=null || name.equals("") || username.equals("") || password.equals("") || password1.equals("")
             || name.length()>30 || username.length()>30 || password.length()>30 || password1.length()>30 || !password.equals(password1)) { error="Empty field, length bigger than 30 symbols, username taken or incorrect password field!"; }

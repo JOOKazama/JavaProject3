@@ -15,7 +15,7 @@ public class CheckUser extends HttpServlet
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
         response.setContentType("text/html; charset=UTF-8");
-        request.getSession().setAttribute("str", request.getParameter("export"));
+        request.getSession().setAttribute("clicked_username", request.getParameter("export"));
 
         if(UserServlet.current_user==null) { request.getRequestDispatcher("/Login").include(request, response); }
         else { request.getRequestDispatcher("/index5.jsp").include(request, response); }

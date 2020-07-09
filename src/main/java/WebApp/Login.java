@@ -56,6 +56,6 @@ public class Login extends HttpServlet
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
         response.setContentType("text/html; charset=UTF-8");
-        request.getRequestDispatcher("/index1.5.jsp").include(request, response);
+        request.getRequestDispatcher("/index3.jsp").include(request, response);
     }
 }

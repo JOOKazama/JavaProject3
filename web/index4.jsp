@@ -2,7 +2,7 @@
 <%@ page import="java.util.List" %>
 <%@ page import="Tables.UserCRUD" %>
 <%@ page import="WebApp.UserServlet" %>
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
 
 <html>
 <head> <title>List</title> </head>
@@ -69,9 +69,9 @@
 <form>
 
     <div class="l1">
-    <a href="${pageContext.request.contextPath}/Login" class="button">Вход</a>
-    <a href="${pageContext.request.contextPath}/Main" class="button">Регистрация</a>
-    <a href="${pageContext.request.contextPath}/ShowUser" class="button">Потребител</a>
+    <a href="Login" class="button">Вход</a>
+    <a href="Main" class="button">Регистрация</a>
+    <a href="ShowUser" class="button">Потребител</a>
     </div>
 
     <table class="l4">
